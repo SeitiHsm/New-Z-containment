@@ -41,6 +41,7 @@ export class GameOver extends Scene {
 
         // Ao clicar no botão, volta para o menu principal
         retryButton.on("pointerdown", () => {
+            this.scene.stop("SurvivalGame");
             this.scene.start("SurvivalGame");
         });
     }
